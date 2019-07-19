@@ -1,35 +1,9 @@
-$('form').on('submit', (event)=>{
-
-        event.preventDefault();
-
-        const userInput = $('input[type="text"]').val();
-        console.log(userInput);
-
-
-        $.ajax({
-            url: "https://pokeapi.co/api/v2/pokemon/" + userInput,
-        }).then(
-            (data)=>{
-                console.log(data);
-            },
-            ()=>{
-                console.log('bad');
-            }
-        );
-    })
 
     const retrieveData = (event) => {
       event.preventDefault();
       let $character = $('input[type="text"]').val();
-      // if ($numEntries == "") {
-      //   $numEntries = 10;
-      // }
-      // else {
-      //   $numEntries = $('input[type="text"]').val();
-      // }
-      // let borough = $(event.currentTarget).val();
+
       $.ajax({
-          //when user clicks on borough, borough name should be 'input'
           url: "https://pokeapi.co/api/v2/pokemon/" + $character,
         })
         .done(
@@ -75,3 +49,30 @@ $('form').on('submit', (event)=>{
           });
     }
     $('input[type="submit"]').on('click', retrieveData);
+
+    // $('form').on('submit', (event)=>{
+    //
+    //         event.preventDefault();
+    //
+    //         const userInput = $('input[type="text"]').val();
+    //         console.log(userInput);
+    //         // if ($numEntries == "") {
+    //   $numEntries = 10;
+    // }
+    // else {
+    //   $numEntries = $('input[type="text"]').val();
+    // }
+    // let borough = $(event.currentTarget).val();
+    //
+    //
+    //         $.ajax({
+    //             url: "https://pokeapi.co/api/v2/pokemon/" + userInput,
+    //         }).then(
+    //             (data)=>{
+    //                 console.log(data);
+    //             },
+    //             ()=>{
+    //                 console.log('bad');
+    //             }
+    //         );
+    //     })

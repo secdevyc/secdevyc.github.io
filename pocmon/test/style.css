@@ -1,0 +1,71 @@
+* {
+  border: 1px solid gold;
+}
+body {
+  font-family: arial;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ======= BANNER ========= */
+.banner, .carousel-container {
+  padding: 5em;
+  width: 100%;
+  margin: 0 2em o -1em;
+}
+
+.banner {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ====== CAROUSEL DIV ======== */
+.carousel-container {
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+}
+/* ====== buttons ========== */
+.previous, .next {
+  align-self: center;
+  background: #f2cd99;
+  color: #888;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px #fa8d8e;
+}
+/* ====== data divs ========== */
+.data {
+  width: 30%;
+  margin: 0 2em;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+}
+
+.div1, .div2, .div3 {
+  display: none;
+  background-color: yellow;
+  border-width: 7px;
+  border-color: black;
+  border-radius: 10px;
+  width: 50%;
+  height: 350px;
+  text-align: center;
+  padding: 1em;
+}
+
+.data div:first-of-type {
+  display: block;
+}
+
+#ability, #item, #moves {
+  border-color: red;
+  border-width: 2px;
+  background-color: azure;
+}
