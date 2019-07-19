@@ -42,24 +42,33 @@ $('form').on('submit', (event)=>{
                   $ability.attr('id', 'ability');
                   $('.div1').append($ability);
               }
-
-              for (let i = 0; i <= [data.held_items].length; i++) {
-
-                  const $item = $('<p>').text(data.held_items[i].item.name)
-                    $item.attr('id', 'item');
-                    $('.div2').append($item);
-              }
+                console.log([data.held_items].length);
 
               for (let i = 0; i <= [data.moves].length; i++) {
                   const $moves = $('<p>')
                     $moves.text(data.moves[i].move.name);
                     $moves.attr('id', 'moves');
                     $('.div3').append($moves);
+              }
+              for (let i = 0; i <= [data.held_items].length; i++) {
+                  console.log(data.held_items.item);
+                  if (data.held_items.item == []) {
+                    console.log("works");
+                    const $item = $('<p>').text("NO ITEM")
+                  }
+                  else {
+                    const $item = $('<p>').text(data.held_items[i].item.name)
+                    $item.attr('id', 'item');
+                    $('.div2').append($item);
+                  }
+              }
+
+
 
                 // $button.on('click', () => {
                 //   $resolution.toggleClass("hidden");
                 // });
-              }
+
           },
           (error)=>{
               console.log('bad request');

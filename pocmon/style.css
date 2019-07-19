@@ -1,0 +1,47 @@
+* {
+  border: 1px solid gold;
+}
+body {
+  font-family: arial;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner, .data {
+  padding: 5em;
+  width: 100%;
+  margin: 0 2em o -1em;
+}
+
+.banner {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.data {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.div1, .div2, .div3 {
+  background-color: yellow;
+  border-width: 7px;
+  border-color: black;
+  border-radius: 10px;
+  width: 25%;
+  height: 250px;
+  text-align: center;
+  padding: 1em;
+}
+
+#ability, #item, #moves {
+  border-color: red;
+  border-width: 2px;
+  background-color: azure;
+}
