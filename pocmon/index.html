@@ -4,33 +4,62 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Irish+Grover|Stalinist+One&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    <!-- =====================
+       MAIN CONTAINER
+    ===================== -->
     <div class="container">
-
-
+      <!-- ======================
+           banner container
+      ========================-->
       <div class="banner">
-        <h1>PO C'MON??</h1>
+
+        <!-- ------header---- -->
+        <h1>Po C'MoN??</h1>
+
+        <!-- ------user input form---- -->
         <form>
-          <input type="text" placeholder="PO"/>
-          <input type="submit" value="c'mon" />
+          <div class="input">
+            <input type="text" placeholder="which                               Po" id="input"/>
+            <input type="submit" value="c'mon" id="button"/>
+          </div>
+
+          <div><h1 id="choose">or choose a pokemon from below</h1></div>
+          <div class="characters">
+            <input type="submit" value="pikachu" id="pikachu" src="imgs/pikachu.png"/>
+            <input type="submit" value="mewtwo" id="mewtwo" src="imgs/mewtwo.png"/>
+            <input type="submit" value="charmander" id="charmander" src="imgs/charmander.png"/>
+            <input type="submit" value="jigglypuff" id="jigglypuff" src="imgs/jigglypuff.png"/>
+          </div>
+
         </form>
       </div>
+      <!-- ==================
+        carousel container
+      ==================== -->
+      <div class="carousel-container">
 
-      <div class="data">
-        <div class="div1">ABILITIES
-          <p id="ability">lightning rod</p>
-          <p id="ability">fjdksl;fj</p>
+        <!-- ------previous button---- -->
+        <div type="image" src="imgs/pikachu.png" class="previous">prev</div>
+
+      <!-- ------data container---- -->
+        <div class="data">
+
+          <div class="div4">PROFILES</div>
+
+          <div class="div1">ABILITIES</div>
+
+          <div class="div2">ITEM</div>
+
+          <div class="div3">TOP MOVES</div>
+
         </div>
 
-        <div class="div2">ITEM
-          <p id="ability">lightning rod</p>
-          <p id="ability">fjdksl;fj</p>
-        </div>
-        <div class="div3">MOVES
-          <p id="ability">lightning rod</p>
-          <p id="ability">fjdksl;fj</p>
-        </div>
+        <!-- ------next button---- -->
+        <div class="next">next</div>
       </div>
     </div>
 

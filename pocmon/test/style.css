@@ -2,8 +2,12 @@
   border: 1px solid gold;
 }
 body {
-  font-family: arial;
+  font-family: 'Fontdiner Swanky', cursive;
 }
+
+/* ==========================
+    MAIN CONTAINER
+========================= */
 .container {
   display: flex;
   flex-direction: column;
@@ -15,6 +19,9 @@ body {
   width: 100%;
   margin: 0 2em o -1em;
 }
+h1 {
+  font-family: 'Irish Grover', cursive;
+}
 
 .banner {
   background-color: yellow;
@@ -22,17 +29,21 @@ body {
   flex-direction: column;
   align-items: center;
 }
+form div {
+  display: flex;
+  justify-content: center;
+}
 
 /* ====== CAROUSEL DIV ======== */
 .carousel-container {
   background-color: red;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 /* ====== buttons ========== */
 .previous, .next {
   align-self: center;
-  background: #f2cd99;
+  background: black;
   color: #888;
   padding: 10px;
   border-radius: 50%;
@@ -47,17 +58,22 @@ body {
   display: flex;
   justify-content: space-around;
 }
-
-.div1, .div2, .div3 {
+img {
+  width: 175px;
+  height: 175px;
+  margin: 0.75em 3em .75em -0.75em;
+}
+.div1, .div2, .div3, .div4{
   display: none;
   background-color: yellow;
   border-width: 7px;
   border-color: black;
   border-radius: 10px;
   width: 50%;
-  height: 350px;
+  height: 425px;
   text-align: center;
   padding: 1em;
+  margin: 0 auto;
 }
 
 .data div:first-of-type {
@@ -68,4 +84,5 @@ body {
   border-color: red;
   border-width: 2px;
   background-color: azure;
+  border-radius: 8px;
 }
