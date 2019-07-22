@@ -11,6 +11,10 @@
 I wireframed the html at wireframe.cc, then designed the html file from that design. 
 I used AJAX to connect to the api, and when I succeeded in connecting, I then with Javascript and Jquery, I started to code the basic functionality of inputing a query and retrieving that specific query. After that and with some CSS, I designed the carousel that will hold/hide/show the retrieved data. I added the quick-poke buttons with icons that I found on the internet and put fuctionality on them with Jquery. I styled the final product and @media design with CSS. 
 
+<h2>Problems</h2>
+I couldn't find a 'Jigglypuff' icon.png that would post without showing the white background. 
+The app works if I use the quick-pokemon first then enter another character in the form, but it doesn't work when I enter the character first and then try to use the quick-pokemon.
+
 <h2>Instructions</h2>
 Type in a pokemon character name in the "Which Po" field then click "C'mon"
 OR
