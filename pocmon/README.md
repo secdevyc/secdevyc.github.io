@@ -8,8 +8,8 @@
 
 
 <h2>Types of Technologies Used</h2>
-I wireframed the ```html``` at wireframe.cc, then designed the html file from that design. 
-I used `AJAX` to connect to the api, and when I succeeded in connecting, I then with Javascript and Jquery, I started to code the basic functionality of inputing a query and retrieving that specific query. After that and with some CSS, I designed the carousel that will hold/hide/show the retrieved data. I added the quick-poke buttons with icons that I found on the internet and put fuctionality on them with Jquery. I styled the final product and @media design with CSS. 
+I wireframed the <b>html</b> at wireframe.cc, then designed the html file from that design. 
+I used <b>AJAX</b> to connect to the api, and when I succeeded in connecting, I then with <b>Javascript</b> and <b>Jquery</b>, I started to code the basic functionality of inputing a query and retrieving that specific query. After that and with some CSS, I designed the carousel that will hold/hide/show the retrieved data. I added the quick-poke buttons with icons that I found on the internet and put fuctionality on them with Jquery. I styled the final product and @media design with <b>CSS</b>. 
 
 <h2>Problems</h2>
 I couldn't find a 'Jigglypuff' icon.png that would post without showing the white background. 
