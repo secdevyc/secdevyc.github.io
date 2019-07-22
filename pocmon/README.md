@@ -1,4 +1,4 @@
-**POCMON**
+<h1>POCMON</h1>
 
 <b>User Stories:</b>
 1. User should be able to type in any pokemon character and retrieve data for that character from the API
