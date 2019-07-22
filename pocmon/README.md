@@ -14,6 +14,7 @@ I used <b>AJAX</b> to connect to the api, and when I succeeded in connecting, I 
 <h2>Problems</h2>
 I couldn't find a 'Jigglypuff' icon.png that would post without showing the white background. 
 The app works if I use the quick-pokemon first then enter another character in the form, but it doesn't work when I enter the character first and then try to use the quick-pokemon.
+Design-wise, it seems too big, I want to try and get it to fit on the screen without having to scroll
 
 <h2>Instructions</h2>
 Type in a pokemon character name in the "Which Po" field then click "C'mon"
