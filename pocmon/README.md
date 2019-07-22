@@ -12,5 +12,5 @@ I wireframed the html at wireframe.cc, then designed the html file from that des
 I used AJAX to connect to the api, and when I succeeded in connecting, I then with Javascript and Jquery, I started to code the basic functionality of inputing a query and retrieving that specific query. After that and with some CSS, I designed the carousel that will hold/hide/show the retrieved data. I added the quick-poke buttons with icons that I found on the internet and put fuctionality on them with Jquery. I styled the final product and @media design with CSS. 
 
 <h2>LINK</h2>
-https://github.com/secdevyc/secdevyc.github.io/pcmon/index.html
+https://secdevyc.github.io/pcmon/index.html
 
