@@ -8,7 +8,7 @@
 
 
 <h2>Types of Technologies Used</h2>
-I wireframed the `html` at wireframe.cc, then designed the html file from that design. 
+I wireframed the ```html``` at wireframe.cc, then designed the html file from that design. 
 I used `AJAX` to connect to the api, and when I succeeded in connecting, I then with Javascript and Jquery, I started to code the basic functionality of inputing a query and retrieving that specific query. After that and with some CSS, I designed the carousel that will hold/hide/show the retrieved data. I added the quick-poke buttons with icons that I found on the internet and put fuctionality on them with Jquery. I styled the final product and @media design with CSS. 
 
 <h2>Problems</h2>
