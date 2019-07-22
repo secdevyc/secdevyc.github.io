@@ -101,8 +101,9 @@ form #choose {
   margin: 0;
   display: flex;
   justify-content: space-around;
-  /* height: 500px; */
-  padding: 3em;
+  height: 450px;
+  padding: 2em;
+  overflow-y: scroll;
 }
 img {
   width: 200px;
@@ -231,6 +232,7 @@ form #choose {
 /* ====== data divs ========== */
 .data {
   width: 150px;
+
   margin: 0;
   display: flex;
   justify-content: space-between;
