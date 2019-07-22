@@ -18,6 +18,9 @@ let numOfDivs = $('.data').children().length - 1
     //       MAIN FUNCTION
     // =======================
     const retrieveData = (event) => {
+      // clears out character input form
+      event.preventDefault();
+
       let $abilites = $('.div1').children();
       let $items = $('.div2').children();
       let $moves = $('.div3').children();
@@ -28,9 +31,6 @@ let numOfDivs = $('.data').children().length - 1
       $items.remove();
       $moves.remove();
       $type.remove();
-
-      // clears out character input form
-      event.preventDefault();
 
       // user input saved to variable which will be plugged into the api url
       let $character = $('input[type="text"]').val() || $(event.currentTarget).val()

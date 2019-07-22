@@ -108,7 +108,7 @@ form #choose {
 img {
   width: 200px;
   height: 200px;
-  margin: 0.75em 3em .75em -1.5em;
+  margin: 0em 3em 0em -1em;
   padding: 0;
 }
 img:hover {
@@ -137,73 +137,28 @@ img:hover {
   background-color: azure;
   border-radius: 8px;
 }
-/* ==========MEDIA QUERY MAN-WIDTH: 600PX========== */
+/* ==========MEDIA QUERY MAx-WIDTH: 600PX========== */
 @media (max-width: 600px){
 .banner h1 {
   color: red;
 }
 /* ======= BANNER ========= */
-.banner, .carousel-container {
-  width: 100%;
-  margin: 0 auto;
-}
+
 h1 {
   font-family: 'Irish Grover', cursive;
   font-size: 50px;
-  margin: 3em auto 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
 .banner {
-  background: url(imgs/bannerbackground.jpg) no-repeat center center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: url(imgs/bannerbackground.jpg) no-repeat;
   border-bottom: 20px solid black;
-  padding: 0 5.5em;
 }
 form div {
-  display: flex;
-  justify-content: center;
+  align-items: center;
 }
-#input {
-  width: 150px;
-  height: 25px;
-}
-form #choose {
-  margin: 0;
-  font-size: 20px;
-}
- #pikachu, #mewtwo, #charmander, #jigglypuff{
-  margin: 1em;
-  width : 100px;
-  height : 50px;
-  border : none;
-  color : transparent;
-}
-#pikachu:hover, #mewtwo:hover, #charmander:hover, #jigglypuff:hover{
-  animation-name: spin;
-  animation-duration: 4000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-#pikachu {
-  background: url(imgs/pikachu.png) no-repeat center center;
-  background-size: 50px 50px;
-}
-#mewtwo {
-  background : url(imgs/mewtwo.png) no-repeat center center;
-  background-size: 50px 50px;
-}
-#charmander {
-  background: url(imgs/charmander.png) no-repeat center center;
-  background-size: 50px 50px;
-}
-#jigglypuff {
-  background: url(imgs/jigglypuff.png) no-repeat center center;
-  background-size: 50px 50px;
-}
+
 .characters {
   display: flex;
   flex-wrap: wrap;
@@ -211,30 +166,16 @@ form #choose {
 /* ====== CAROUSEL DIV ======== */
 .carousel-container {
   font-size: 12px;
-  background: url(imgs/databackground.jpg) no-repeat;
   background-size: 100% 500px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
   padding: 0 3em;
 }
 /* ====== buttons ========== */
 .previous, .next {
-  align-self: center;
-  background: black;
-  color: #888;
   font-size: 10px;
-  padding: 10px;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 1px 1px #fa8d8e;
 }
 /* ====== data divs ========== */
 .data {
   width: 150px;
-
-  margin: 0;
-  display: flex;
   justify-content: space-between;
   padding: 3em;
 }
@@ -242,21 +183,12 @@ img {
   width: 75px;
   height: 75px;
   margin: 0.75em 3em .75em 0em;
-  padding: 0;
 }
 img:hover {
   transform: scale(2);
 }
 .div1, .div2, .div3, .div4{
   display: none;
-  background-color: yellow;
-  border-width: 7px;
-  border-color: black;
-  border-radius: 10px;
-  width: 50%;
-  text-align: center;
-  /* padding: 1em; */
-  margin: 0 auto;
 }
 
 .data div:first-of-type {
