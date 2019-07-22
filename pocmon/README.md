@@ -15,6 +15,9 @@ I used AJAX to connect to the api, and when I succeeded in connecting, I then wi
 Type in a pokemon character name in the "Which Po" field then click "C'mon"
 OR
 just click on one of the quick-pokemon character icons and the app will retrieve information for that particular character. 
+
+The app will retrieve profile pictures, abilities, items and moves for each character inputed. Click the 'Next' and 'Prev' buttons to carousel through the retrieved data. 
+
 <h2>LINK</h2>
 https://secdevyc.github.io/pcmon/index.html
 
