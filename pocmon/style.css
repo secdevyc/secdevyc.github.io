@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 /* ======= BANNER ========= */
 .banner, .carousel-container {
@@ -105,7 +105,7 @@ form #choose {
   justify-content: space-around;
   height: 450px;
   padding: 2em;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 img {
   width: 200px;
