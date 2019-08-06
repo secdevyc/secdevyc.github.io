@@ -129,9 +129,10 @@ img:hover {
   text-align: center;
   padding: 1em;
   margin: 0 auto;
+}
+.div3 {
   overflow-y: auto;
 }
-
 .data div:first-of-type {
   display: block;
 }
