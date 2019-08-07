@@ -83,7 +83,8 @@ form #choose {
 /* ====== CAROUSEL DIV ======== */
 .carousel-container {
   background: url(imgs/databackground.jpg) no-repeat;
-  background-size: 100% auto;
+  background-size: 100%;
+  background-position: auto;
   display: flex;
   justify-content: center;
   margin: 0 auto;
