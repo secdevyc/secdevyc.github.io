@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <% include ./partials/head.ejs %>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>MonGooSe ShopPPin'</h1>
+        <a href="/store/new" id="add" class="btn btn-outline-light">+ sumpin'</a>
+      </div>
+      <!-- <div class="d-flex flex-wrap" id="all"> -->
+      <div class="containerProduct">
+        <% for (let i = 0; i < products.length; i++) { %>
+          <div class="products">
+            <p><%= products[i].name %></p>
+            <div class="pic">
+              <a href="/store/<%= products[i].id %>"><img src="<%= products[i].img %>" alt=""></a>
+            </div>
+            <p>Price: $<%= products[i].price %></p>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>

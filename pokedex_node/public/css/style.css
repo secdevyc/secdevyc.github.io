@@ -1,0 +1,35 @@
+* {
+  /* border: 1px solid gold; */
+  border-radius: 7px;
+}
+#header {
+  background-color: blue;
+  color: white;
+  width: 93%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+#cards {
+  background-color: yellow;
+  border: 1px solid black;
+}
+.btn {
+  font-size: 10px;
+}
+
+#show, #new, #edit {
+  width: 50%;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: blue;
+  color: white;
+}
+
+#form-outline {
+  background-color: yellow;
+  color: red;
+  padding: 3px;
+  border-radius: 7px;
+  margin: 6px auto;
+}

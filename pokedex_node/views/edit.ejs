@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <% include ./partials/head.ejs %>
+  </head>
+  <body>
+    <div class="container" id="edit">
+      <h1 style="background-color:red">POKE-DEX EDIT PAGE</h1>
+        <form action="/pokemon/<%= index %>?_method=PUT" method="POST" class="form-group">
+          <div id="form-outline">
+            Name: <input type="text" name="name" value="<%= pokemon.name %>" />
+            Type: <input type="text" name="type" value="<%= pokemon.type %>"/><br />
+          </div>
+
+          <div id="form-outline" class="d-flex flex-column">
+            Image: <input type="text" name="img" value="<%= pokemon.img %>" class="form-control"/><img class="p-2" style="width:200px; height:auto" src="<%= pokemon.img %>"><br />
+          </div>
+
+          <div id="form-outline">
+            Stats:<br />
+              <input type="text" name="hp" value="hp:<%= pokemon.stats.hp %>" class="form-control-sm"/>
+              <input type="text" name="attack" value="attack:<%= pokemon.stats.attack %>"class="form-control-sm"/>
+              <input type="text" name="defense" value="defense:<%= pokemon.stats.defense %>"class="form-control-sm"/><br />
+              <input type="text" name="spattack" value="sp.attack:<%= pokemon.stats.spattack %>"class="form-control-sm"/>
+              <input type="text" name="spdefense" value="sp.defense:<%= pokemon.stats.spdefense %>"class="form-control-sm"/>
+              <input type="text" name="speed" value="speed:<%= pokemon.stats.speed %>" class="m-1 form-control-sm"/><br />
+            </div>
+          <input type="submit" name="" value="Submit Changes" class="mt-3 btn btn-outline-danger btn-block"/>
+        </form>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <% include ./partials/head.ejs %>
+  </head>
+  <body>
+    <a href="/store">2fRonT</a>
+    <div class="showproducts">
+      <h1 id="showh1"><%= product.name %></h1>
+      <div class="showpic">
+      <img src="<%= product.img %>" alt="">
+      </div>
+      <h3 id="showh3"><%= product.description %></h3>
+      <% if (product.qty > 0) { %>
+        <h4 id="showh4">Price: $<%= product.price %></h4>
+        <p>ONLY <%= product.qty %> LEFT!</p>
+        <form class="" action="/store/<%= product.id %>/buy?_method=PUT" method="POST">
+          <input type="submit" name="" value="jack'd">
+        </form>
+      <% } else { %> <h2>OUT OF STOCK</h2> <% } %>
+      <a href="/store/<%= product.id %>/edit">fix'it</a><br />
+      <form class="" action="/store/<%= index %>?_method=DELETE" method="POST" id="del">
+        <input type="submit" name="" value="trash" >
+      </form>
+    </div>
+  </body>
+</html>

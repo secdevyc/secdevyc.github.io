@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <% include ./partials/head.ejs %>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Product Edit Page</h1>
+      <div class="form">
+        <form action="/store/<%=product.id%>?_method=PUT" method="POST">
+          <fieldset>
+            <legend>dA 411</legend>
+            cAllin iT: <input type="text" name="name" value="<%= product.name %>"/>
+            uhhHHhh: <input type="text" name="description" value="<%= product.description%>"/>
+          </fieldset>
+          <fieldset>
+            <legend>lOOkin PurRty</legend>
+            <input type="text" name="img" value="<%= product.img %>"/>
+          </fieldset>
+          <fieldset class="" id="inventory">
+            <legend>dA boOkz</legend>
+            $$$$$$: <input type="text" name="price" value="<%= product.price%>" id="price"/>
+            ######: <input type="text" name="qty" value="<%= product.qty%>" id="qty"/>
+          </fieldset>
+          <input type="submit" name="" value="fiX'd" class="btn btn-danger"/>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
