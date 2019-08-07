@@ -1,6 +1,6 @@
 const $box = $('.box');
 let clicks = 0;
-
+////// Assigning variables to each box/////////
 const $box1 = $('#box1');
 const $box2 = $('#box2');
 const $box3 = $('#box3');
@@ -11,13 +11,23 @@ const $box7 = $('#box7');
 const $box8 = $('#box8');
 const $box9 = $('#box9');
 
+///// 'X' Win Alert /////////
 const xWin = () => {
   alert('X wins!');
+  location.reload();
 }
+//// 'O' Win alert ///////
 const oWin = () => {
   alert('O wins!');
+  location.reload();
+}
+///// TIE Alert /////////
+const noWin = () => {
+  alert('TIE');
+  location.reload();
 }
 
+///////////////  checks for win conditions  ///////////////////
 const checkWin = () => {
   if ($box1.hasClass('x') === true && $box2.hasClass('x') === true && $box3.hasClass('x') === true) {
     xWin();
@@ -69,21 +79,30 @@ const checkWin = () => {
   }
 }
 
-
+/////// STARTS GAME revealing 'X' or 'O' function ///////////
 const changeSign = (event) => {
-  if ($(event.currentTarget).hasClass('x') === true || $(event.currentTarget).hasClass('o') === true) {
+  // runs tie alert on 10th click
+  if (clicks == 9) {
+    noWin();
+  }
+  // if user clicks on a box thats already been clicked
+  else if ($(event.currentTarget).hasClass('x') === true || $(event.currentTarget).hasClass('o') === true) {
     alert("This box is full");
-  } else {
-    if (clicks % 2 === 0) {
-      $box.empty();
-      $(event.currentTarget).css('background-image', 'url(imgs/x.png)').addClass('x');
-      clicks++;
-      checkWin();
-    } else {
-      $box.empty();
-      $(event.currentTarget).css('background-image', 'url(imgs/o.png)').addClass('o');
-      clicks++;
-      checkWin();
+  }
+  else {
+      // if clicks=odd number, the box is 'X'
+      if (clicks % 2 === 0) {
+        $box.empty();
+        $(event.currentTarget).css('background-image', 'url(imgs/x.png)').addClass('x');
+        clicks++;
+        checkWin();
+      }
+      // if clicks=two number, the box is 'O'
+      else {
+        $box.empty();
+        $(event.currentTarget).css('background-image', 'url(imgs/o.png)').addClass('o');
+        clicks++;
+        checkWin();
     }
   }
 }
