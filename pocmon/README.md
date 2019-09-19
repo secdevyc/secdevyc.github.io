@@ -24,5 +24,5 @@ just click on one of the quick-pokemon character icons and the app will retrieve
 The app will retrieve profile pictures, abilities, items and moves for each character inputed. Click the 'Next' and 'Prev' buttons to carousel through the retrieved data. 
 
 <h2>LINK</h2>
-https://secdevyc.github.io/pcmon/index.html
+https://secdevyc.github.io/pocmon
 
